@@ -106,12 +106,13 @@ class Renderer {
         let p5 = {x: 300, y:325};
         let vs = [p0,p1,p2,p3,p4,p5];
         this.drawConvexPolygon(vs, color, framebuffer);
-        p0 = {x:  250, y:  250};
+
+        p0 = {x:  250, y:  150};
         p1 = {x: 250, y: 200};
-        p2 = {x: 300, y: 150};
-        p3 = {x: 175, y: 100};
+        p2 = {x: 225, y: 225};
+        p3 = {x: 200, y: 225};
         p4 = {x: 100, y: 50};
-        p5 = {x: 75, y: 100};
+        p5 = {x: 75, y: 50};
         vs = [p0,p1,p2,p3,p4,p5];
         this.drawConvexPolygon(vs, color, framebuffer);
        // this.drawTriangle(point_a, point_c, point_b,, framebuffer);
@@ -133,7 +134,7 @@ class Renderer {
         this.drawLine(p0, p1, color, framebuffer);
         this.drawLine(p1, p2, color, framebuffer);
         this.drawLine(p2, p3, color, framebuffer);
-        this.drawLine(p3, p4, color, framebuffer);
+        this.drawLine(p3, p4, color, framebuffer);  
 
         this.drawCircle({x: 260, y: 285}, 35, this.num_curve_sections, color, framebuffer);
 
